@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>login</title>
+  </head>
+  <body>
+    <div class="main">
+      <section class="bar" id="bar">
+        <div class="nav" id="myNavbar">
+          <img src="/assets/logo.png" width="50px" />
+          <h2 class="logo">Mon<span>CV.tn</span></h2>
+          <a href="#home">Acceuil</a>
+          <a href="#news">Design</a>
+          <a href="#contact">Modèles</a>
+        </div>
+        <div class="search" id="search">
+          <button
+            type="button"
+            class="btn2"
+            id="bbtn"
+            onclick="document.getElementById('sa').style.display='block'"
+          >
+            <img src="/assets/OIP.jfif" width="30px" />
+          </button>
+          <!--<div id="sa" class="rech">
+            <form
+              class="example"
+              action="/action_page.php"
+              style="margin: auto; max-width: 300px"
+              method="post"
+            >
+              <input type="text" placeholder="Search.." name="search2" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>-->
+        </div>
+        <div class="login" id="login">
+          <button
+            type="button"
+            class="btn"
+            onclick="document.getElementById('id01').style.display='block'"
+            style="width: auto"
+          >
+            Se connecter
+          </button>
+
+          <div id="id01" class="modal">
+            <form
+              class="modal-content animate"
+              action="/action_page.php"
+              method="post"
+            >
+              <div class="imgcontainer">
+                <span
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="close"
+                  title="Close Modal"
+                  >&times;</span
+                >
+                <img src="/assets/user_login.png" alt="Avatar" class="avatar" />
+              </div>
+
+              <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input
+                  type="text"
+                  placeholder="Enter Username"
+                  name="uname"
+                  required
+                />
+
+                <label for="psw"><b>Password</b></label>
+                <input
+                  type="password"
+                  placeholder="Enter Password"
+                  name="psw"
+                  required
+                />
+
+                <button type="submit" class="btn1">Login</button>
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" />
+                  Remember me
+                </label>
+              </div>
+
+              <div class="container" style="background-color: #f1f1f1">
+                <button
+                  type="button"
+                  onclick="document.getElementById('id01').style.display='none'"
+                  class="cancelbtn"
+                >
+                  Cancel
+                </button>
+                <span class="psw"><a href="#">Forgot password?</a></span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="para">
+        <img src="/assets/cvv.svg" width="500px" />
+        <div class="text">
+          <h1>Céer Votre CV Gratuitement et Rapidement</h1>
+          <h3>
+            Remplisser le formulaire et télécharger votre CV en quelques minutes
+          </h3>
+
+          <form action="/index.html" method="get" target="_blank">
+            <button
+              type="button"
+              class="btnn"
+              width="300px"
+              onclick="window.location.href = 'index.html'"
+            >
+              Céer Votre CV
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>
